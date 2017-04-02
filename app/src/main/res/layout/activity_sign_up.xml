@@ -10,29 +10,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.edmundconnor.clubem.SignUp">
 
-    <EditText
+    <TextView android:text = "Please Sign Up"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="text|textPersonName"
-        android:ems="10"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp"
-        android:id="@+id/editText"
-        tools:text="Please sign up."
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height = "wrap_content"
+        android:id = "@+id/textview"
+        android:textSize = "35dp"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/password1"
-        android:layout_alignLeft="@+id/password1"
-        android:layout_alignStart="@+id/password1"
+        android:layout_below="@+id/textview"
+        android:layout_alignLeft="@+id/textview"
+        android:layout_alignStart="@+id/textview"
         android:layout_marginTop="35dp"
-        android:id="@+id/name"
+        android:id="@+id/nameSignUp"
         android:hint="Name"
         android:background="@android:drawable/editbox_dropdown_light_frame" />
 
@@ -41,11 +36,11 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:layout_below="@+id/name"
-        android:layout_alignLeft="@+id/name"
-        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/emailSignUp"
+        android:layout_alignLeft="@+id/emailSignUp"
+        android:layout_alignStart="@+id/emailSignUp"
         android:layout_marginTop="35dp"
-        android:id="@+id/editText6"
+        android:id="@+id/gradYearSignUp"
         android:hint="Grad Year"
         android:background="@android:drawable/editbox_dropdown_light_frame" />
 
@@ -55,11 +50,11 @@
         android:inputType="textPassword"
         android:ems="10"
         android:layout_marginTop="35dp"
-        android:id="@+id/password"
+        android:id="@+id/passwordSignUp"
         android:hint="Password"
-        android:layout_below="@+id/email"
-        android:layout_alignLeft="@+id/email"
-        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/gradYearSignUp"
+        android:layout_alignLeft="@+id/gradYearSignUp"
+        android:layout_alignStart="@+id/gradYearSignUp"
         android:background="@android:drawable/editbox_dropdown_light_frame" />
 
     <EditText
@@ -68,13 +63,11 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:layout_marginTop="20dp"
-        android:id="@+id/email"
+        android:id="@+id/emailSignUp"
         android:hint="Email"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="58dp"
-        android:layout_marginEnd="58dp"
+        android:layout_below="@+id/nameSignUp"
+        android:layout_alignLeft="@+id/nameSignUp"
+        android:layout_alignStart="@+id/nameSignUp"
         android:background="@android:drawable/editbox_dropdown_light_frame" />
 
     <EditText
@@ -83,19 +76,33 @@
         android:inputType="textPassword"
         android:ems="10"
         android:layout_marginTop="35dp"
-        android:id="@+id/password1"
+        android:id="@+id/password1SignUp"
         android:hint="Retype Password"
         android:background="@android:drawable/editbox_dropdown_light_frame"
-        android:layout_below="@+id/password"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password" />
+        android:layout_below="@+id/passwordSignUp"
+        android:layout_alignLeft="@+id/passwordSignUp"
+        android:layout_alignStart="@+id/passwordSignUp" />
+
+    <TextView android:text = "Passwords must match."
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/textview1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize = "15dp"
+        android:layout_below="@+id/password1SignUp"
+        android:layout_alignLeft="@+id/password1SignUp"
+        android:layout_alignStart="@+id/password1SignUp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        tools:gravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal" />
 
     <Button
-        android:text="Button"
+        android:text="Sign Up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        tools:text="Sign Up"
+        android:id="@+id/buttonSignUp"
         android:textSize="24sp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

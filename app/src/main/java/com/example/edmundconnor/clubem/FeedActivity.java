@@ -3,11 +3,11 @@ package com.example.edmundconnor.clubem;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class allClubs extends AppCompatActivity {
+public class FeedActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_all_clubs);
+        setContentView(R.layout.activity_feed);
     }
 }
